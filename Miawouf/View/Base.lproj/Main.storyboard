@@ -69,13 +69,13 @@
         <!--Success View Controller-->
         <scene sceneID="fag-mF-b8X">
             <objects>
-                <viewController id="Yva-kJ-JGz" customClass="SuccessViewController" customModule="Miawouf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Yva-kJ-JGz" customClass="SuccessViewController" customModule="Miawouf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ksp-dV-KXT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inscription Réussie ! 🎉" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cX-sr-Eps">
-                                <rect key="frame" x="53" y="402.5" width="308" height="37"/>
+                                <rect key="frame" x="53" y="429.5" width="308" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -108,9 +108,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Paw" translatesAutoresizingMaskIntoConstraints="NO" id="Kb9-qc-mNd">
                                 <rect key="frame" x="86" y="289.5" width="242" height="229"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wq-rg-cqJ">
-                                <rect key="frame" x="86" y="289" width="237" height="251"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wq-rg-cqJ">
+                                <rect key="frame" x="86" y="278.5" width="242" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="251" id="hVr-V1-XcO"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
@@ -121,10 +123,13 @@
                         <viewLayoutGuide key="safeArea" id="JZJ-0O-XLw"/>
                         <color key="backgroundColor" red="0.30196079609999998" green="0.53333336109999996" blue="0.76470589639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Kb9-qc-mNd" firstAttribute="centerX" secondItem="5qr-Wb-5mV" secondAttribute="centerX" id="2Uj-bf-IF2"/>
+                            <constraint firstItem="9wq-rg-cqJ" firstAttribute="leading" secondItem="Kb9-qc-mNd" secondAttribute="leading" id="1BY-Gt-AUh"/>
                             <constraint firstItem="5nf-eG-bXb" firstAttribute="top" secondItem="JZJ-0O-XLw" secondAttribute="top" constant="56" id="BcX-kP-3Wn"/>
-                            <constraint firstItem="Kb9-qc-mNd" firstAttribute="centerY" secondItem="5qr-Wb-5mV" secondAttribute="centerY" id="kaq-Z5-tyu"/>
+                            <constraint firstItem="9wq-rg-cqJ" firstAttribute="centerY" secondItem="Kb9-qc-mNd" secondAttribute="centerY" id="DRN-9T-pWw"/>
+                            <constraint firstItem="Kb9-qc-mNd" firstAttribute="centerX" secondItem="5qr-Wb-5mV" secondAttribute="centerX" id="apk-aS-LCD"/>
                             <constraint firstItem="5nf-eG-bXb" firstAttribute="centerX" secondItem="5qr-Wb-5mV" secondAttribute="centerX" id="oCG-WA-xiu"/>
+                            <constraint firstItem="Kb9-qc-mNd" firstAttribute="centerY" secondItem="5qr-Wb-5mV" secondAttribute="centerY" id="poV-aZ-hqQ"/>
+                            <constraint firstItem="9wq-rg-cqJ" firstAttribute="trailing" secondItem="Kb9-qc-mNd" secondAttribute="trailing" id="rz2-SC-Nca"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="Hvo-8I-mlO" userLabel="Welcome"/>
