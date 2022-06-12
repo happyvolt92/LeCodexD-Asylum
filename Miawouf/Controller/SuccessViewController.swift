@@ -15,7 +15,10 @@ class SuccessViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func dismiss(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaQ-BN-wbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="634.78260869565224" y="87.723214285714278"/>
+            <point key="canvasLocation" x="562" y="88"/>
         </scene>
         <!--Success View Controller-->
         <scene sceneID="fag-mF-b8X">
@@ -80,19 +80,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31e-Vh-uUi">
+                                <rect key="frame" x="43" y="78" width="54" height="62"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="X">
+                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dismiss:" destination="Yva-kJ-JGz" eventType="touchUpInside" id="U3y-0n-3PV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvn-sK-nNR">
+                                <rect key="frame" x="119.5" y="831" width="175" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jvn-sK-nNR" secondAttribute="height" multiplier="175:31" id="Hhz-dC-u1r"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Inscrire un autre animal"/>
+                                <connections>
+                                    <segue destination="GHx-CY-9a5" kind="unwind" unwindAction="unwindToWelcomeWithSegue:" id="ANR-y5-gb4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2dw-7h-iTD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="31e-Vh-uUi" firstAttribute="top" secondItem="2dw-7h-iTD" secondAttribute="top" constant="34" id="Mho-Mu-yQz"/>
                             <constraint firstItem="1cX-sr-Eps" firstAttribute="centerY" secondItem="ksp-dV-KXT" secondAttribute="centerY" id="QKn-s3-IhF"/>
+                            <constraint firstItem="jvn-sK-nNR" firstAttribute="centerX" secondItem="ksp-dV-KXT" secondAttribute="centerX" id="RvO-y6-D4h"/>
+                            <constraint firstItem="2dw-7h-iTD" firstAttribute="trailing" secondItem="31e-Vh-uUi" secondAttribute="trailing" constant="317" id="TKv-Gp-dDK"/>
+                            <constraint firstItem="jvn-sK-nNR" firstAttribute="bottom" secondItem="2dw-7h-iTD" secondAttribute="bottom" id="aeC-Yr-57J"/>
                             <constraint firstItem="1cX-sr-Eps" firstAttribute="centerX" secondItem="ksp-dV-KXT" secondAttribute="centerX" id="ln3-nM-Mkn"/>
+                            <constraint firstItem="31e-Vh-uUi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2dw-7h-iTD" secondAttribute="leading" id="wzP-wY-qjb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hCx-7n-42B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yh5-b9-5x1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="GHx-CY-9a5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="688" y="-924"/>
+            <point key="canvasLocation" x="561" y="-558"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="5mC-fh-HkG">
@@ -136,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IwL-b7-Uyc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97.101449275362327" y="88.392857142857139"/>
+            <point key="canvasLocation" x="-196" y="88"/>
         </scene>
     </scenes>
     <resources>

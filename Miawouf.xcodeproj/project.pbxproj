@@ -105,12 +105,12 @@
 		22991CBC285375F3001C6C90 /* Miawouf */ = {
 			isa = PBXGroup;
 			children = (
+				22991CEF28537685001C6C90 /* Model */,
+				22991CF02853768E001C6C90 /* View */,
+				22991CF1285376A3001C6C90 /* Controller */,
 				22991CBD285375F3001C6C90 /* AppDelegate.swift */,
 				22991CBF285375F3001C6C90 /* SceneDelegate.swift */,
 				22991CCB285375F4001C6C90 /* Info.plist */,
-				22991CEF28537685001C6C90 /* Model */,
-				22991CF1285376A3001C6C90 /* Controller */,
-				22991CF02853768E001C6C90 /* View */,
 			);
 			path = Miawouf;
 			sourceTree = "<group>";
