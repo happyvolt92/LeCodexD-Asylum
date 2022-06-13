@@ -158,6 +158,10 @@
                                     </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VlF-Wm-cc9">
                                         <rect key="frame" x="0.0" y="248.66666666666669" width="388" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="fMe-oS-3H1" id="QMq-jd-Q6h"/>
+                                            <outlet property="delegate" destination="fMe-oS-3H1" id="U1r-5s-xAw"/>
+                                        </connections>
                                     </pickerView>
                                 </subviews>
                             </stackView>
