@@ -120,6 +120,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="continue" textContentType="nickname"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="fMe-oS-3H1" id="caQ-zS-W4P"/>
+                                        </connections>
                                     </textField>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PDv-A7-W0C">
                                         <rect key="frame" x="0.0" y="63.666666666666657" width="388" height="32"/>
@@ -149,6 +152,9 @@
                                         <rect key="frame" x="0.0" y="185" width="388" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="fMe-oS-3H1" id="C9f-3C-NBv"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Race" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPz-yA-Ut2">
                                         <rect key="frame" x="0.0" y="220" width="388" height="27.666666666666657"/>
@@ -168,6 +174,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DDG-WW-xtB"/>
                         <color key="backgroundColor" red="0.30196079609999998" green="0.53333336109999996" blue="0.76470589639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="DDG-WW-xtB" firstAttribute="trailing" secondItem="sZV-4O-4v3" secondAttribute="trailing" constant="20" id="20p-7U-r0J"/>
                             <constraint firstItem="8EQ-QJ-dha" firstAttribute="centerX" secondItem="rVB-J4-gTj" secondAttribute="centerX" id="Fnv-WC-LNq"/>
@@ -175,10 +182,22 @@
                             <constraint firstItem="sZV-4O-4v3" firstAttribute="leading" secondItem="DDG-WW-xtB" secondAttribute="leading" constant="20" id="jtf-Xx-odj"/>
                             <constraint firstItem="DDG-WW-xtB" firstAttribute="bottom" secondItem="8EQ-QJ-dha" secondAttribute="bottom" constant="20" id="wZ8-OO-9QY"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NL7-7p-4D6" appends="YES" id="Cm5-iR-3Hu"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="7B8-mZ-9YU" userLabel="FormViewController"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="Lqh-YP-9XO" id="V4c-4Z-cPA"/>
+                        <outlet property="phoneTextField" destination="36K-48-DQU" id="scP-dB-ejV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaQ-BN-wbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NL7-7p-4D6">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="fMe-oS-3H1" id="LrF-Za-1lt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="560.74766355140184" y="87.473002159827217"/>
         </scene>

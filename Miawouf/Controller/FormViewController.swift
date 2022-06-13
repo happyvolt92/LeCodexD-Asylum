@@ -8,7 +8,13 @@
 import UIKit
 
 class FormViewController: UIViewController {
-
+    
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        nameTextField.resignFirstResponder()
+        phoneTextField.resignFirstResponder()
+    }
 }
 
 extension FormViewController: UIPickerViewDataSource {
@@ -27,3 +33,9 @@ extension FormViewController: UIPickerViewDelegate {
     }
 }
 
+extension FormViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
