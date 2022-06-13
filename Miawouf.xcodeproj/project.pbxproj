@@ -19,6 +19,7 @@
 		22991CF32853B221001C6C90 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22991CF22853B221001C6C90 /* WelcomeViewController.swift */; };
 		22991CF52853F10E001C6C90 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22991CF42853F10E001C6C90 /* FormViewController.swift */; };
 		22991CF72853F118001C6C90 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22991CF62853F118001C6C90 /* SuccessViewController.swift */; };
+		229BD2E828573C4C0032A402 /* CatWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229BD2E728573C4C0032A402 /* CatWelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		22991CF22853B221001C6C90 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		22991CF42853F10E001C6C90 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		22991CF62853F118001C6C90 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		229BD2E728573C4C0032A402 /* CatWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				22991CF22853B221001C6C90 /* WelcomeViewController.swift */,
 				22991CF42853F10E001C6C90 /* FormViewController.swift */,
 				22991CF62853F118001C6C90 /* SuccessViewController.swift */,
+				229BD2E728573C4C0032A402 /* CatWelcomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				22991CF32853B221001C6C90 /* WelcomeViewController.swift in Sources */,
 				22991CBE285375F3001C6C90 /* AppDelegate.swift in Sources */,
 				22991CF52853F10E001C6C90 /* FormViewController.swift in Sources */,
+				229BD2E828573C4C0032A402 /* CatWelcomeViewController.swift in Sources */,
 				22991CF72853F118001C6C90 /* SuccessViewController.swift in Sources */,
 				22991CC0285375F3001C6C90 /* SceneDelegate.swift in Sources */,
 			);
