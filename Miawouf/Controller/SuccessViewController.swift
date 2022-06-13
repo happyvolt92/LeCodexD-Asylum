@@ -19,6 +19,8 @@ class SuccessViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    var pet: Pet?
+    
     /*
     // MARK: - Navigation
 

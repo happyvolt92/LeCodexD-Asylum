@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2237614D2857A17A00A697E5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237614C2857A17A00A697E5 /* Model.swift */; };
 		22991CBE285375F3001C6C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22991CBD285375F3001C6C90 /* AppDelegate.swift */; };
 		22991CC0285375F3001C6C90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22991CBF285375F3001C6C90 /* SceneDelegate.swift */; };
 		22991CC5285375F3001C6C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22991CC3285375F3001C6C90 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2237614C2857A17A00A697E5 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		22991CBA285375F3001C6C90 /* Miawouf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miawouf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22991CBD285375F3001C6C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22991CBF285375F3001C6C90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		22991CEF28537685001C6C90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2237614C2857A17A00A697E5 /* Model.swift */,
 				22991CED28537681001C6C90 /* Races.swift */,
 			);
 			path = Model;
@@ -296,6 +299,7 @@
 			files = (
 				22991CEE28537681001C6C90 /* Races.swift in Sources */,
 				22991CF32853B221001C6C90 /* WelcomeViewController.swift in Sources */,
+				2237614D2857A17A00A697E5 /* Model.swift in Sources */,
 				22991CBE285375F3001C6C90 /* AppDelegate.swift in Sources */,
 				22991CF52853F10E001C6C90 /* FormViewController.swift in Sources */,
 				229BD2E828573C4C0032A402 /* CatWelcomeViewController.swift in Sources */,
