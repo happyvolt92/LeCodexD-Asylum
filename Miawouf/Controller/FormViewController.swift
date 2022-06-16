@@ -38,12 +38,12 @@ class FormViewController: UIViewController {
        
       return Pet(name: name, hasMajority: hasMajority, phone: phone, race: race, gender: gender)
      }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueToSuccess" {
-            let successVC = segue.destination as? SuccessViewController
-            let pet = sender as? Pet
-            successVC?.pet = pet
+            if segue.identifier == "segueToSuccess" {
+                let successVC = segue.destination as? SuccessViewController
+                let pet = sender as? Pet
+            successVC?.dog = pet
         }
     }
 }

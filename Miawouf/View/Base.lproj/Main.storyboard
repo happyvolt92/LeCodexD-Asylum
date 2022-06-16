@@ -213,9 +213,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inscription Réussie ! 🎉" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cX-sr-Eps">
-                                <rect key="frame" x="33.5" y="315" width="308" height="37"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inscription Réussie ! 🎉" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cX-sr-Eps">
+                                <rect key="frame" x="20" y="325" width="335" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -249,11 +249,16 @@
                             <constraint firstItem="jvn-sK-nNR" firstAttribute="centerX" secondItem="ksp-dV-KXT" secondAttribute="centerX" id="RvO-y6-D4h"/>
                             <constraint firstItem="2dw-7h-iTD" firstAttribute="trailing" secondItem="31e-Vh-uUi" secondAttribute="trailing" constant="317" id="TKv-Gp-dDK"/>
                             <constraint firstItem="jvn-sK-nNR" firstAttribute="bottom" secondItem="2dw-7h-iTD" secondAttribute="bottom" id="aeC-Yr-57J"/>
+                            <constraint firstItem="1cX-sr-Eps" firstAttribute="leading" secondItem="2dw-7h-iTD" secondAttribute="leading" constant="20" id="e8s-hN-v8y"/>
                             <constraint firstItem="1cX-sr-Eps" firstAttribute="centerX" secondItem="ksp-dV-KXT" secondAttribute="centerX" id="ln3-nM-Mkn"/>
+                            <constraint firstItem="2dw-7h-iTD" firstAttribute="trailing" secondItem="1cX-sr-Eps" secondAttribute="trailing" constant="20" id="sU2-RG-mZs"/>
                             <constraint firstItem="31e-Vh-uUi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2dw-7h-iTD" secondAttribute="leading" id="wzP-wY-qjb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hCx-7n-42B"/>
+                    <connections>
+                        <outlet property="label" destination="1cX-sr-Eps" id="uZm-v6-Jmd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yh5-b9-5x1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="GHx-CY-9a5" userLabel="Exit" sceneMemberID="exit"/>
