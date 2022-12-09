@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Paw.png",
+      "filename" : "zef 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Paw@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Paw@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

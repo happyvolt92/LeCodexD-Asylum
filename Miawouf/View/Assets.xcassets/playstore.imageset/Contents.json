@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Miawouf.png",
+      "filename" : "playstore.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Miawouf@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Miawouf@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
